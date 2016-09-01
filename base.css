@@ -1,0 +1,61 @@
+html,body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,ol,i{margin:0;padding:0;}
+img{border:0 none;}
+img { vertical-align:middle}
+ul,ol{ list-style:none}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;}
+html{ overflow-x:hidden;}
+body,input{ -webkit-text-size-adjust:none;line-height:1.5; font:normal 14px 'Microsoft YaHei','\5B8B\4F53',Arial,sans-serif;outline:none;}
+a { text-decoration:none; color:#333}
+a:hover,a:focus{text-decoration: none;color:#333;}
+a:focus{outline:0;}
+textarea{resize: none}
+li{list-style: none}
+i{display: inline-block;font-style: normal}
+strong{font-weight: normal;}
+/********************************************************************/
+/*text*/
+.text-13{font-size: 13px;}
+.text-14{font-size: 14px;}
+.text-15{font-size: 15px;}
+.text-16{font-size: 16px;}
+.text-24{font-size: 24px;}
+.text-white{color:#ffffff;}
+.text-black{color:#000000;}
+.bg-black{background:#000000 !important;}
+.text-center{text-align: center}
+.text-right{text-align: right}
+/*layout*/
+.fl{float: left;}
+.fr{float: right;}
+.fn{float: none;}
+.clear{clear: both}
+.ofa{overflow: auto}
+.ofh{overflow: hidden}
+.pr{position:relative}
+.pa{position: absolute}
+.pf{position: fixed}
+.db{display: block !important}
+.dib{display: inline-block}
+.dn{display: none}
+/*margin*/
+.auto{margin-left: auto;margin-right: auto;}
+.mt-5{margin-top:5px;}
+.mt-10 {margin-top:10px;}
+/*others*/
+.cursor-p{cursor: pointer}
+/*header*/
+.head-inc{margin: 25px auto 0;max-width: 960px;min-width: 750px;text-align: center;width: 100%;}
+.head-inc ul{display: inline-block}
+.head-inc ul li{background-color: #f0f0f0;background-image: linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);border-right: 1px solid rgba(9, 9, 9, 0.125);box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;float: left;list-style: outside none none;position: relative;}
+.head-inc ul li:first-child {border-radius: 4px 0 0 4px;}
+.head-inc ul li:last-child {border-radius: 0 4px 4px 0;}
+.head-inc ul li:first-child::after,.head-inc ul li.selected:first-child::after{border-radius: 4px 0 0 4px;box-shadow: 1px 0 0 #a3a3a3, 2px 0 0 #fff;}
+.head-inc ul li::after{background-image: -ms-linear-gradient(left,#bbb,#fff,#bbb);background-image: -webkit-linear-gradient(left,#bbb,#fff,#bbb);background-image: -moz-linear-gradient(left,#bbb,#fff,#bbb);box-shadow: -1px 0 0 #a3a3a3, -2px 0 0 #fff, 1px 0 0 #a3a3a3, 0 0 0 #fff;content: ".";height: 100%;left: 0;opacity: 0;overflow: hidden;position: absolute;text-indent: -9999px;top: 0;transition: all 0.25s ease 0s;width: 100%;z-index: 1;}
+.head-inc ul li:hover::after, .head-inc ul li.selected::after, .head-inc ul li:target::after {opacity: 1;}
+.head-inc ul li a{color: #5d5d5d;display: inline-block;font: 20px/1 Lobster,Arial,sans-serif;padding: 12px 16px 14px;position: relative;text-decoration: none !important;text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);white-space: nowrap;z-index: 2;}
+.head-inc ul li.home a{box-sizing: content-box;background: rgba(0, 0, 0, 0) url("images/index/about/github_ico.png") no-repeat scroll center center;display: block;overflow: hidden;padding: 32px 14px 14px;text-indent: -9999px;width: 16px;}
+/*footer*/
+.footer{border-top: 1px solid #1a1a1a; font-size: 0; margin-top: 20px; }
+.footer i.footer-line{background: #353535 none repeat scroll 0 0;border: medium none;color: #353535;height: 1px;width: 100%;}
+.footer .footer-content{margin: 0 auto; width: 860px;color:#969696; height: 90px; line-height: 90px; }
+.footer a.ad{bottom: 0;height: 45px;left: 50%;margin-left: -45px;position: absolute;width: 90px;}
