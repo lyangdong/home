@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="jquery.jscrollpane.min.css"/>
     <style>
         html,body{height: 100%;}
+        .introduce{padding: 10px 25px}
+        .introduce li{margin: 4px 0}
+        .introduce .h1{font-size: 18px;color: white}
+        .introduce .h2{font-size: 16px;color: orange}
+        .introduce .act{color: #cccccc}
         .outer{background:#252525 url("images/index/about/page_background.png") repeat-x;width: 100%;opacity: 0;min-height: 100%;}
         .content{width: 860px;margin: 0 auto;}
         .content .head{ padding-top: 51px; }
@@ -46,13 +51,32 @@
         .item-box.orange .content-body .title{color:white;font-size: 18px;}
         .item-box.blue .content-body a{display:inline-block;width: 200px;height: 150px;text-align: center;line-height: 250px;color: black;font-size: 20px}
         .item-box.yellow .content-body a{display:inline-block;width: 200px;height: 150px;text-align: center;line-height: 250px;color: black;font-size: 20px}
+        .content-body .page{position: relative}
         .content-body .page-1{float: left;width: 200px;height: 150px;margin: 20px 50px;border: 1px solid #cccccc;background-image: url("images/index/about/page-1.png");background-size: 100%}
         .content-body .page-2{float: left;width: 200px;height: 150px;margin: 20px 50px;border: 1px solid #cccccc;background-image: url("images/index/about/page-2.png");background-size: 100%}
         .content-body .page-3{float: left;width: 200px;height: 150px;margin: 20px 50px;border: 1px solid #cccccc;background-image: url("images/index/about/page-3.png");background-size: 100%}
         .content-body .page-4{float: left;width: 200px;height: 150px;margin: 20px 50px;border: 1px solid #cccccc;background-image: url("images/index/about/page-4.png");background-size: 100%}
-        .content-body .page-5{float: left;width: 200px;height: 150px;margin: 20px 50px;border: 1px solid #cccccc;background-image: url("images/index/about/page-5.png");background-size: 100%}
-        .content-body .page-6{float: left;width: 200px;height: 150px;margin: 20px 50px;border: 1px solid #cccccc;background-image: url("images/index/about/page-6.png");background-size: 100%}
-        .item-box.orange .box-content a{display: inline-block;padding: 10px 15px;border: 1px solid #cccccc;color: white;margin: 20px 20px}
+        .content-body .page-5{float: left;width: 200px;height: 300px;margin: 40px 50px;border: 1px solid #cccccc;background-image: url("images/index/about/page-5.png");background-size: 100%}
+        .content-body .page-6{float: left;width: 200px;height: 300px;margin: 40px 50px;border: 1px solid #cccccc;background-image: url("images/index/about/page-6.png");background-size: 100%}
+        .content-body .page span{display: none;position: absolute;width: 200px;height: 150px;line-height:150px;text-align: center;background: rgba(22,22,22,0.8);color: darkorange}
+        .content-body .page-6 span,.content-body .page-5 span{height: 300px;line-height: 300px}
+        .content-body .page:hover span{display: block}
+        .item-box.orange .box-content a{display: inline-block;padding: 5px 15px;border: 1px solid #cccccc;color: white;margin: 20px 20px}
+        .cloud a {
+            float: left;
+            list-style: none;
+            line-height: 30px;
+            height: 30px;
+            padding: 0 12px;
+            font-size: 13px;
+            margin: 10px 10px 0 0;
+            border-radius: 8px;
+            transition: border-radius 0.5s;
+        }
+        .cloud a:hover{
+            border-radius: 0;
+            text-shadow: 1px 1px 1px #ffffff;
+        }
         @media screen and (max-width: 1366px){
             .content .head{padding-top: 26px;}
             .content .head .title-box .title{float: left;}
@@ -79,6 +103,27 @@
                 </div>
                 <div class="item-content">
                     <div class="content-top-border"><i></i></div>
+
+                       <ul class="introduce">
+                           <li class="h1">教育经历</li>
+                           <li class="h2">成都大学</li>
+                           <li class="act">时间:2010.9 - 2014.6</li>
+                           <li class="act">专业:软件工程</li>
+                       </ul>
+                       <ul class="introduce">
+                           <li class="h1">工作经验</li>
+                           <li class="h2">成都逸动无限网络科技有限公司</li>
+                           <li class="act">时间:2015.8 - 2016.8</li>
+                           <li class="act">职位:Web前端开发</li>
+                           <li class="act">职责:负责公司web页面的开发和维护，以及移动端和webapp的页面</li>
+                       </ul>
+                        <ul class="introduce">
+                            <li class="h2">成都优地技术有限公司</li>
+                            <li class="act">时间:2014.9 - 2015.6</li>
+                            <li class="act">职位:Web前端开发</li>
+                            <li class="act">职责:对电视盒子中的APP进行适配测试，并用QC管理测试BUG，直到BUG修复。</li>
+                        </ul>
+
                     <div class="content-body scroll-pane">
 
                     </div>
@@ -93,17 +138,17 @@
                 <div class="item-content">
                     <div class="content-top-border"><i></i></div>
                         <div class="content-body resume-box">
-                            <div class="page-1">
-                                <a href="https://lyangdong.github.io/demo1/" target="_blank">导航页面</a>
+                            <div class="page page-1">
+                                <a href="https://lyangdong.github.io/demo1/" target="_blank"><span>普通页面练习</span></a>
                             </div>
-                            <div class="page-2">
-                                <a href="https://lyangdong.github.io/demo2/" target="_blank">商品详情页面</a>
+                            <div class="page page-2">
+                                <a href="https://lyangdong.github.io/demo2/" target="_blank"><span>商品详情页面</span></a>
                             </div>
-                            <div class="page-3">
-                                <a href="https://lyangdong.github.io/demo3/" target="_blank">公司首页展示</a>
+                            <div class="page page-3">
+                                <a href="https://lyangdong.github.io/demo3/" target="_blank"><span>公司首页展示</span></a>
                             </div>
-                            <div class="page-4">
-                                <a href="https://lyangdong.github.io/demo6/" target="_blank">动漫网站模仿</a>
+                            <div class="page page-4">
+                                <a href="https://lyangdong.github.io/demo6/" target="_blank"><span>动漫网站模仿</span></a>
                             </div>
                         </div>
                     <i class="content-footer"></i>
@@ -118,11 +163,11 @@
                     <div class="content-top-border"><i></i></div>
                     <div class="content-body resume-box ">
                        <div class="box-content">
-                           <div class="page-5">
-                               <a href="https://lyangdong.github.io/demo4/" target="_blank">固定宽移动端页面</a>
+                           <div class="page page-5">
+                               <a href="https://lyangdong.github.io/demo4/" target="_blank"><span>固定高移动端页面</span></a>
                            </div>
-                           <div class="page-6">
-                               <a href="https://lyangdong.github.io/demo5/" target="_blank">仿淘宝手机端页面</a>
+                           <div class="page page-6">
+                               <a href="https://lyangdong.github.io/demo5/" target="_blank"><span>仿淘宝手机端页面</span></a>
                            </div>
                        </div>
                     </div>
@@ -137,18 +182,18 @@
                 <div class="item-content">
                     <div class="content-top-border"><i></i></div>
                     <div class="content-body">
-                       <div class="box-content">
-                           <a href="https://lyangdong.github.io/demo8/" target="_blank">图片切换以及放大</a>
-                           <a href="https://lyangdong.github.io/demo9/" target="_blank">选项卡</a>
-                           <a href="https://lyangdong.github.io/demo10/" target="_blank">省市区ajax练习</a>
-                           <a href="https://lyangdong.github.io/demo12/" target="_blank">走势图</a>
-                           <a href="https://lyangdong.github.io/demo13/" target="_blank">百分比加载</a>
-                           <a href="https://lyangdong.github.io/demo14/" target="_blank">图片hover特效</a>
-                           <a href="https://lyangdong.github.io/demo15/" target="_blank">图片延迟加载</a>
-                           <a href="https://lyangdong.github.io/demo16/" target="_blank">滑块拖动验证</a>
-                           <a href="https://lyangdong.github.io/demo17/" target="_blank">仿自由落体运动</a>
-                           <a href="https://lyangdong.github.io/demo18/" target="_blank">时钟</a>
-                           <a href="https://lyangdong.github.io/demo19/" target="_blank">扇形倒计时</a>
+                       <div class="box-content cloud">
+                           <a class="bg1" href="https://lyangdong.github.io/demo8/" target="_blank">图片切换以及放大</a>
+                           <a class="bg4" href="https://lyangdong.github.io/demo9/" target="_blank">选项卡</a>
+                           <a class="bg2" href="https://lyangdong.github.io/demo10/" target="_blank">省市区ajax练习</a>
+                           <a class="bg4" href="https://lyangdong.github.io/demo12/" target="_blank">走势图</a>
+                           <a class="bg5" href="https://lyangdong.github.io/demo13/" target="_blank">百分比加载</a>
+                           <a class="bg2" href="https://lyangdong.github.io/demo14/" target="_blank">图片hover特效</a>
+                           <a class="bg3" href="https://lyangdong.github.io/demo15/" target="_blank">图片延迟加载</a>
+                           <a class="bg1" href="https://lyangdong.github.io/demo16/" target="_blank">滑块拖动验证</a>
+                           <a class="bg6" href="https://lyangdong.github.io/demo17/" target="_blank">仿自由落体运动</a>
+                           <a class="bg3" href="https://lyangdong.github.io/demo18/" target="_blank">时钟</a>
+                           <a class="bg2" href="https://lyangdong.github.io/demo19/" target="_blank">扇形倒计时</a>
                        </div>
                     </div>
                     <i class="content-footer"></i>

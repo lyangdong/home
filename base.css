@@ -43,6 +43,14 @@ strong{font-weight: normal;}
 .mt-10 {margin-top:10px;}
 /*others*/
 .cursor-p{cursor: pointer}
+/*bg*/
+.bg1{ background-color: #036564}
+.bg2{ background-color: #eb6841}
+.bg3{ background-color: #3fb8af}
+.bg4{ background-color: #fe4365}
+.bg5{ background-color: #fc9d9a}
+.bg6{ background-color: #fc9d9a}
+.bg7{ background-color: #83af9b}
 /*header*/
 .head-inc{margin: 25px auto 0;max-width: 960px;min-width: 750px;text-align: center;width: 100%;}
 .head-inc ul{display: inline-block}
